@@ -1,0 +1,118 @@
+/* Reset default margin/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding doesn't increase size */
+}
+
+/* Full page centered layout */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fcbf49;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main container box */
+.container {
+  background-color: #eae2b7;
+  padding: 2rem;
+  border-radius: 1rem;
+  min-height: 45vh;
+  width: 40vh;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Slight shadow */
+}
+
+.container h2 {
+  margin-bottom: 1.5rem;
+}
+
+/* Form spacing */
+form {
+  margin: 0 1rem;
+}
+
+form select,
+form button,
+form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.75rem;
+}
+
+/* Input box styling */
+form input {
+  border: 1px solid lightgray;
+  font-size: 1rem;
+  height: 3rem;
+  padding-left: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Dropdown currency section */
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+/* Individual currency select container */
+.select-container {
+  display: flex;
+  width: 6rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: 1px solid lightgray;
+  padding: 0.5rem;
+  background-color: #fff;
+}
+
+/* Flag images */
+.select-container img {
+  width: 2rem;
+  margin-right: 0.5rem;
+}
+
+/* Dropdown select styling */
+.select-container select {
+  font-size: 1rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Center message (like "1 USD = 80 INR") */
+.msg {
+  margin: 2rem 0;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Swap icon spacing */
+.fa-arrow-right-arrow-left {
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Submit button */
+button {
+  height: 3rem;
+  background-color: #af4d98;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #933b82;
+}
